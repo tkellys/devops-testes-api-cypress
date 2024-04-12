@@ -25,7 +25,7 @@ describe('Cadastro de dispositivos', () => {
             .then((response) => {
                 expect(response.status).equal(400)
                 expect(response.body.error)
-                    .equal("404 Bad Request. If you are trying to create or update the data, potential issue is that you are sending incorrect body json or it is missing at all.")
+                    .equal("400 Bad Request. If you are trying to create or update the data, potential issue is that you are sending incorrect body json or it is missing at all.")
             })
     })
 })
